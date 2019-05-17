@@ -1,12 +1,14 @@
 # Data Analysis Projects
 
-## 1. Loan Status Analysis
-_Application of Classification Methods in Analyzing and Predicting Loan Status (Python)_
+### 1. Application of Classification Methods in Analyzing and Predicting Loan Status
 
-## 2. San Francisco Housing Price Analysis
+[Loan Status Analysis](https://github.com/yuydu/data-project/tree/master/Loan%20Status%20Analysis)
 
-_Geographical Features and Impact Factors of Housing Price in San Francisco (Python, SQL)_
+### 2. Geographical Features and Impact Factors of Housing Price in San Francisco
 
-## 3. UC Davis Instructional System Analysis
+[San Francisco Housing Price Analysis](https://github.com/yuydu/data-project/tree/master/San%20Francisco%20Housing%20Price%20Analysis)
 
-_Analysis of UC Davis Instructional System --- a case study of Winter 2018 (Python)_
+
+### 3. Analysis of UC Davis Instructional System --- a case study of Winter 2018
+
+[UC Davis Instructional System Analysis](https://github.com/yuydu/data-project/tree/master/UC%20Davis%20Instructional%20System%20Analysis)
