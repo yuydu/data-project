@@ -12,7 +12,7 @@ The best classifier of each model was developed using cross-validation and area 
 
 #### What is our data look like?
 
-<img src="Doodle%20Recognition/images/EDA1.png" width="600">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/EDA1.png" width="600">
 
 
 ### Method 1: KNN
@@ -43,8 +43,8 @@ The accuracy of the default random forest model is 0.40, and the average precisi
 
 For the random searched model, the best paramters we obtained are: n\_estimators: 900, min\_sample\_split: 2, min\_samples\_leaf: 1, max\_features: 'sqrt', max\_depth: 50. The accuracy is 0.583, the average precision, recall and f1-score are 0.59. According to the confusion matrices, among the 10 classes, the results are pretty close to each other, and the worst one is 'cat', the best one is 'snail'. The micro-average area of PR curve is 0.61 and if ROC curve is 0.90.
 
-<img src="Doodle%20Recognition/images/rf_confusion_matrix_norm.png" width="450">
-<img src="Doodle%20Recognition/images/rf_confusion_matrix_not_norm.png" width="500">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/rf_confusion_matrix_norm.png" width="450">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/rf_confusion_matrix_not_norm.png" width="500">
 
 ### Method 3: GBDT
 
@@ -56,7 +56,7 @@ We applied 4-fold cross validation here to select out the optimal model from our
 
 In Gradient Boosted Decision Tree, two basic tuning parameters are the number of iterations and the sizes of each of the constituent trees, which in our function correspond to 'n\_estimators' and 'max\_depth'.
 
-* Loss function: Referring to book The Elements of Statistical Learning, for Classification cases, the common loss function should be `Deviance'.
+* Loss function: Referring to book The Elements of Statistical Learning, for Classification cases, the common loss function should be 'Deviance'.
 
 * n\_estimators (iterations) are selected to be 100, 300, 500 or 1000. Even though Gradient boosting is fairly robust to over-fitting, we still used 100 as a candidate to reduce the probability of over-fitting. Also we set the iteration to stop while there is no change in continuous 30 times.
 
@@ -73,8 +73,8 @@ learning\_rate is 0.05, max\_depth is 6, n\_estimators (iterations) is 1000, n\_
 
 The final result demonstrates that after 630 iterations (the last 30 without any changes), the accuracy rate is around 63.717\%, micro-averaged average precision score over all classes is 0.63389, mean accuracy, micro-averaged precision score, recall score on the given test data and labels are 0.63717.
 
-<img src="Doodle%20Recognition/images/gdbt_ROC.png" width="500">
-<img src="Doodle%20Recognition/images/gdbt_PR.png" width="500">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/gdbt_ROC.png" width="500">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/gdbt_PR.png" width="500">
 
 From the ROC and PR curves, the area under the micro-average ROC curve is 0.9035, the area under the micro-average PR curve is 0.63. According to the normalized confusion matrix, 'cat' is the class with worst prediction and 'snail' is the class with best prediction.
 
