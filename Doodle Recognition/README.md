@@ -82,7 +82,14 @@ From the ROC and PR curves, the area under the micro-average ROC curve is 0.9035
 ## Method 4: SVM
 Supported vector machine(SVM), which is a supervised machine learning algorithm used for classification and we extend this method to multi-class classification here. It constructs set of hyperplanes in a high-dimensional space and uses kernel trick to transform our data. Based on these transformations it finds optimal boundaries between the possible outputs.  
 
-We first do grid search with cross vallidation to find best parameter estimate of C and Gamma. Here we consider 4 kinds of kernel: linear, polynomial, gaussian and sigmoid.
+We first do grid search with cross vallidation to find best parameter estimate of C and Gamma. Here we consider 4 kinds of kernel: linear, polynomial, gaussian and sigmoid. The overall results of 4 kernels are shown in the table below:
+
+|Kernel | ACC | Precision | Recall | F1 | AUPR | AUROC|
+|--- | --- | --- | --- | --- | --- | --- |
+|linear | 0.45 | 0.45 | 0.45 | 0.44 | 0.39 | 0.82|
+|poly | 0.65 | 0.65 | 0.65 |0.65 | 0.62 | 0.91|
+|rbf | 0.60 | 0.61 | 0.60| 0.60 | 0.59 | 0.88|
+|igmoid | 0.44 | 0.45 |0.44 | 0.44 | 0.38 | 0.81|
 
 Among all kernels, we find polynomial kernel with parameter C = 10 and Gamma = 0.05 gives hignest accuracy and average precision. Confusion matrix, ROC and PR curves also give best results as they return largest AUC. Hence we can conclude the choice of polynomial kernel with parameter C = 10 and Gamma = 0.05 as our final model in SVM and compare it with others methods proposed from other team members.
 
