@@ -123,17 +123,45 @@ In this experiment, we explore the effects of different hyper-parameters and lay
 
 * Number of Convolutional Layers: Convolutional layers can do feature extraction. Convolutional layers extract the low-level features(pixels) to high-level, with more layers and deeper network, the model becomes more complex and thus can perform better, but also, are easily overfitting and hard to train(more parameters). We try 2, 4, 6, 8 Conv layers.
 
-* Batchsize: We try batch size 32,64, 128, 256 ..., etc.
+* Batchsize: We try batch size 32,64, 128, 256, ..., etc.
 
+We find our best model with ConvNet Architectures as follows produces validation accuracy = 0.8516.
 
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/cnnstructure.png">
 
+The problem with small datasets is that models trained with them do not generalize well data from the validation and test set. Data augmentation is another way we can reduce over-fitting on models, where we increase the amount of training data using information only in our training data. We do rotation, zoom, width\_shift and height\_shift from our training data and tunning the range of them to find a best one which can augment effect data and not increase unnecessary noise. Finally, we choose rotation\_range = 10, zoom\_range = 0.1, width\_shift\_range = 0.1 and height\_shift\_range = 0.1. Using Data Augmentation, our best model improved greatly: the val\_acc is improved From 0.8516 to 0.8708.
 
+The following figures show accuracy and loss from different selected CNN models.  
 
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/CNN3.png" width="500">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/CNN4.png" width="500">
 
+### Conclusion
 
+In this project, we used KNN, SVM, GBDT, random forest and CNN to classify the quick draw dataset. The result shows that CNN achieves 86.25\% accuracy, beating other models with accuracy around 60\%. The classification for some classes has a high precision, such like for snail, which hits 99.45\%, whereas there are still some classes which have low precision such like dragon, since the impression of dragon in different people mind varies a lot.
 
+**Predicted Accuracy for different Models**
 
+|Model|Accuracy|
+|------|------|
+|KNN|0.605|
+|Random Forest|0.583|
+|GBDT|0.6372|
+|SVM-Poly|0.65|
+|CNN model|0.8625|
 
+We can have a further look on the mis-classified image as shown below by our best model(CNN), we could find it is even impossible for human to recognize it. From this perspective, our model works well.
 
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/CNN6.png" width="500">
 
+### Discussion
+
+_Future work:_
+
+* **More Complicated CNN-based model** More complicated models can be implemented, such as ResNet, MobileNet, etc.
+* **Parallel Computation** Training on imags takes a lot of computational resources and is really time-consuming. We can try to train models with GPUs or more CPUs to speed up our training process.
+* **More features** we can try to import drawing-stroke information and timestamp, and use LSTM model, since maybe some images look the same but their drawing-stroke orders are different.
+
+_Statement of Vision:_
+Image recognition provides technical support for big data technologies such as automatic driving and face recognition, and is the cornerstone of building an intelligent society. 
 
