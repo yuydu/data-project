@@ -2,7 +2,7 @@
 
 ### Group members  
 
-Yuxin Lu   Yuyang Du   Dandi Peng   Jiayi Bian
+Y. Lu,   Y. Du,   D. Peng,   J. Bian
 
 ### Reasons why we choose this topic
 
