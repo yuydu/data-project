@@ -2,7 +2,7 @@
 
 ### Group members  
 
-Y. Lu,   Y. Du,   D. Peng,   J. Bian
+Y. Lu, Y. Du, D. Peng, J. Bian
 
 ### Reasons why we choose this topic
 
