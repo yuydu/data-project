@@ -152,7 +152,7 @@ In this project, we used KNN, SVM, GBDT, random forest and CNN to classify the q
 
 We can have a further look on the mis-classified image as shown below by our best model(CNN), we could find it is even impossible for human to recognize it. From this perspective, our model works well.
 
-<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/CNN6.png" width="500">
+<img src="https://raw.githubusercontent.com/yuydu/data-project/master/Doodle%20Recognition/images/CNN6.png" width="600">
 
 ### Discussion
 
