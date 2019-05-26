@@ -1,6 +1,6 @@
 ## Image Classification: Quick Draw! Doodle Recognition
 
-Jiahui Li  Songkai Xiao   Shan Jiang   Wei-Kuang Lin   Yuyang Du   Yu Zhu   Dandi Peng   Jiayi Bian   Xinzhe Xie   Shiheng Duan
+J. Li,  S. Xiao,   S. Jiang,   W. Lin,   Y. Du,   Y. Zhu,   D. Peng,   J. Bian,   X. Xie,   S. Duan
 
 
 ### Introduction
