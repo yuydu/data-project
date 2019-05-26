@@ -2,7 +2,7 @@
 
 ## Application of Classification Methods in Analyzing and Predicting Loan Status
 
-Jiayi Bian  Yuyang Du    Dandi Peng
+J. Bian,  Y. Du,   D. Peng
 
 
 data source: https://www.lendingclub.com/info/download-data.action
